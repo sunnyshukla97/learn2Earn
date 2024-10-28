@@ -46,8 +46,36 @@
 
 // After Number conversion-> (their type remains a number, but upon printing they come as follows->)
 // 33 => 33
-// 33 abc => NaN
+// "33 abc" => NaN
 // true => 1; false => 0
 // null => 0
+
+// let isloggedIn = 1
+// let booleanisloggedIn = Boolean(isloggedIn)
+// console.log(typeof booleanisloggedIn);
+// console.log(booleanisloggedIn);
+
+// 1 => true; 0=> false; string value => true; ""(empty string) => false
+
+
+// let isloggedIn = "sunny"
+// let booleanisloggedIn = Boolean(isloggedIn)
+// console.log(typeof booleanisloggedIn);
+// console.log(booleanisloggedIn);
+
+
+// let someNumber = 33
+// let someString = String(someNumber)
+// console.log(typeof someString);
+// console.log(someString);
+
+
+
+
+
+
+
+
+
 
 
