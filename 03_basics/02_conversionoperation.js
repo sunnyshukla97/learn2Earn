@@ -71,6 +71,76 @@
 
 
 
+//practice->
+// adj = "abc"
+// console.log(typeof adj);
+// console.log(adj);
+
+// let atk = Number(adj)
+// console.log(typeof atk);
+// console.log(atk);
+
+
+
+// ******Operations->>**********
+// let value = 3
+// let negValue = -value
+// console.log(negValue);
+
+// Basic Mathematical Operations->
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3);
+
+
+// String Addition->
+//  let str1 = "hello"
+//  let str2 = " sunny"
+//  let str3 = str1 + str2
+//  console.log(str3);
+ 
+// Interesting part of confusion in string addition with a number->
+// console.log("1" + 2);
+// console.log(1 + "2");
+//here it comes 12 in output, but->
+// console.log("1" + 2 + 2); here it comes 122, and then->
+// console.log(1 + 2 + "2"); here it comes 32.
+
+// Reason- if string is occuring first then everything would be converted according to a string;
+// and if number is occuring first then the numbers would first be taken care of then the string.
+
+
+// Tricky Conversion-->
+
+// console.log(true); ->true
+// console.log(+true); -> 1
+// console.log(+""); -> 0
+
+
+
+// Prefix & Postfix -->>
+// let gameCounter = 100
+// gameCounter++; same value in after++
+// ++gameCounter; same vlaue in before ++
+// console.log(gameCounter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
