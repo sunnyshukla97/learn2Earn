@@ -54,6 +54,32 @@
 // console.log(typeof myFunction);
 
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory are of 2 types in js- 1) Stack(primitive type data are allocated here); 2) Heap(Non-primitive type data are allocated)
+
+// stack (primitive)--
+// let myYoutubeName = "sunny-shukla"
+
+// let anotherName = myYoutubeName
+// anotherName = "sunny-Prime"
+
+// console.log(anotherName);
+// console.log(myYoutubeName); // here, change in name in "anotherName" but no change in "myYoutubename", this is called change in copy.
+
+// Heap(non-primitive/reference)--
+let userOne = {
+    email: "sunny@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "sunny121@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email); // here, change happens in both the places because there is change taking place in the original file as the original file is the refernce file, thats why there is change.
+
+
+
 
 
 
