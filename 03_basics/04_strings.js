@@ -45,6 +45,38 @@ let gameName = new String('sunnygpc')
 // console.log(gameMode.toUpperCase());
 // console.log(gameMode.__proto__);
 
+// Trim method in string-->
+// const newString = "     sunny    "
+// console.log(newString);
+// console.log(newString.trim()); // trim basically removes spaces.
+
+// Replace method -->
+// const url = "https://sunny.com/sunny%20shukla"
+
+// console.log(url.replace('%20', '-'));
+
+// Include method--> we can also see whether a variable contains something or not.
+// for example->
+// console.log(url.includes('sunny')); //-true
+// console.log(url.includes('sundar')); //-false
+
+// Split method--> It splits a string in diffenrent parts & also it converts string into array based on "-" or "spcaces" or whatever we want to be based on.
+// const miAmore = "sunny-sh-com"
+// console.log(miAmore.split(' ')); 
+// console.log(miAmore.split('-'));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
