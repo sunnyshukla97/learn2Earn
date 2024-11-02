@@ -2,7 +2,7 @@
 // console.log(score);
 
 // const Balance = new Number(100)
-// console.log(Balance);
+// console.log(typeof Balance);
 // diff. btw above two is only that when we speciallly give it as a "number", there's a diff. in output.
 
 
