@@ -43,8 +43,60 @@ const Juser = {
 
 // console.log(Juser["full name"]); // matlab agar key ko kisine upar wale ke jaise diya to iske siwa or koi tarika nahi hai 
 // usko access krne ka.
+
+//ques-> symbol ko jab typeof kr rhe h to wo symbol declare hone ke baad bhi typeof me string he bta rha hai. kyu?
+
+
+// How to change values in an object->
+//for eg->
+Juser.email = "sunny@chatgpt.com"
+// console.log(Juser.email);
+
+// How to lock/freeze an object for no further changes->
+// Object.freeze(Juser) //beyond this no further changes will take place untill & unless commeneted out!
+// Juser.email = "sunny@microsoft.com"
 // console.log(Juser);
-// console.log(Juser[mysym]); 
+
+// How to add function in a object---->>>>
+Juser.greeting = function(){
+    console.log("Hello JS User");
+    
+}
+
+Juser.greetingtwo = function(){
+    console.log(`Hello JS User, ${this.name}`);
+    
+}
+
+// console.log(Juser.greeting());
+// console.log(Juser.greetingtwo());
+// console.log(Juser);
+// Juser.greeting()
+// Juser.greetingtwo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
