@@ -12,10 +12,11 @@
 
 // 1) Literals-> eg.->
 // const Juser = {}
+// when object is declared thru Literals, "singleton" is created.
 
 // 2) constructor-> eg.->
 // Object.create
-// when object is declared thru constructor, "singleton" is created.
+
 
 
 // object literals;->
@@ -58,15 +59,15 @@ Juser.email = "sunny@chatgpt.com"
 // console.log(Juser);
 
 // How to add function in a object---->>>>
-Juser.greeting = function(){
-    console.log("Hello JS User");
+// Juser.greeting = function(){
+//     console.log("Hello JS User");
     
-}
+// }
 
-Juser.greetingtwo = function(){
-    console.log(`Hello JS User, ${this.name}`);
+// Juser.greetingtwo = function(){
+//     console.log(`Hello JS User, ${this.name}`);
     
-}
+// }
 
 // console.log(Juser.greeting());
 // console.log(Juser.greetingtwo());
@@ -75,9 +76,48 @@ Juser.greetingtwo = function(){
 // Juser.greetingtwo()
 
 
+const Person = {
+    name: "john",
+    age: 30,
+    location: "sitamarhi",
+    isLoggedIn: true,
+    email: "kangaroo@firehai.com",
+    available: "yes",
+    greet: function() {
+        console.log(`Hello from ${this.name}`);
+        
+    }
+  
 
+}
+// console.log(Person);
+// Person.sayHello = function(){
+//     console.log(`Hello, my name is ${this.name}`);
+    
+// }
 
+// Person.sayHello()
 
+// Person.greet = function(){
+//     console.log(`${'greetings'}, my name is ${this.name}`);
+    
+// }
+// Person.greet()
+
+// console.log(Person);
+
+// Person.greet()
+
+// Create object using constructor---->>>> example with syntax-->>
+
+function People(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+const People1 = new People("john", 30)
+// console.log(People1);
+console.log(People1.name);
 
 
 
