@@ -12,7 +12,7 @@
 
 // 1) Literals-> eg.->
 // const Juser = {}
-// when object is declared thru Literals, "singleton" is created.
+
 
 // 2) constructor-> eg.->
 // Object.create
@@ -110,14 +110,127 @@ const Person = {
 
 // Create object using constructor---->>>> example with syntax-->>
 
-function People(name, age) {
-    this.name = name;
-    this.age = age;
-}
+// function People(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
 
-const People1 = new People("john", 30)
-// console.log(People1);
-console.log(People1.name);
+// const People1 = new People("john", 30)
+// // console.log(People1);
+// console.log(People1.name);
+
+
+
+
+const tinderUser = new Object() //singleton way of declaring an object.
+// const tinderUser = {} //literal way of object declaration.
+tinderUser.id = "123abc"
+tinderUser.name = "ratan"
+tinderUser.isLoggedIn = false
+// tinderUser.name = "ramu"
+// tinderUser.age = 34
+// tinderUser.occupation = "business"
+// tinderUser.hobbies = ['cricket', 'hockey', 'cinema']
+// console.log(tinderUser);
+
+
+
+const regularUser = {
+    email: "some@google.com",
+    fullname: {
+        userfullname: {
+            firstname: "sunny",
+            lastname: "shukla"
+        }
+    }
+}
+// Below is a way of accessing stuffs of objects under ojects kind of things.
+// console.log(regularUser.fullname);
+// console.log(regularUser.fullname.userfullname);
+// console.log(regularUser.fullname.userfullname.firstname);
+
+// adding diff sets objects in as single object---->>>>
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
+
+// const obj3 = { obj1, obj2 }
+// console.log(obj3);  // same problem of objects ke andar ek aur objects aa rha hai output me, so we use object.assign()
+
+// The Object.assign() is static method copies all enumerable own properties from one or more source objects to a target object.
+// It returns the modified target object.
+// const obj3 = Object.assign(obj1, obj2)
+// const obj3 = Object.assign({}, obj1, obj2, obj4) //{}->we're giving it a target to take the sources to that target.
+// console.log(obj3);
+
+// const obj3 = {...obj1, ...obj2, ...obj4} // the spread operator- mostly 90% of time, we use this.
+// console.log(obj3);
+
+
+
+// Jab Database se value aata hai, to arrays of objects ke form me aata hai,
+// to unko loop thru krna ho ya kisi ka value print krna ho, to wo hm kuch is prakar karenge---->>>>
+
+// const users = [
+//     {
+//         id: 1,
+//         email: "s@google.com"
+//     },
+//     {
+//         id: 2,
+//         email: "s2@google.com"
+//     }
+// ]
+
+// console.log(users[1].email)
+
+
+
+
+
+// key aur value ko output pe print krwana---->>>>
+
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); //returns output of keys as an array!
+// console.log(Object.values(tinderUser)); // returns output of values as an array!
+// console.log(Object.entries(tinderUser)); // retruns key,values of array inside an array,
+// like [['id', '123abc'], ['name', 'ratan']]
+
+
+// "hasownproperty" method -> is method se, we ask ki aisa koi value hai kya!
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // returns output as boolean values, true/false.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

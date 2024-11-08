@@ -19,6 +19,8 @@ const dc_Heroes = ["superman", "flash", "batman"]
 // const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]] //where there is array inside array and aonther array within that inside array.
 // const real_another_array = another_array.flat(Infinity)
 // console.log(real_another_array);
+// console.log(another_array); // no change in the old array.
+
 
 // const real_another_array = another_array.flat(1)
 // // console.log(real_another_array);
