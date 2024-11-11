@@ -89,6 +89,60 @@
 // console.log(loginUser());
 // console.log(loginUser("sunny")); // ye likhte he ye print hoga, upar wale ko overwrite krke.
 
+// Functions with objects & array in JS---->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+// Use of "Rest Opetaor"--------->>>>(...)
+// 1)Naming functions and using rest operator for handling multiple parameters in JavaScript
+//2)The rest operator in JavaScript allows bundling multiple values into a single array.
+// for ex-> in shopping apps like flipkart, when customers adds to cart a lot of orders,
+// we exactly don't know the exact number of orders that would be added to a cart, 
+// so we can use the rest operator there in the parameter, so that it bundles all the orders into a single array!
+// For Ex-->>
+
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+// output is ->[ 200, 400, 500, 2000 ]
+
+// another case of writing---->>>>
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+// output is -> [ 500, 2000 ], 200-val1 me gya, 400-val2 me gya!
+
+// How to pass objects in functions-------------->>>>
+// const user = {
+//     username: "sunny",
+//     price: 199
+// }
+
+// function handleObject(anyobject){
+//     console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+
+// }
+
+// handleObject(user)
+// object ko bana ke v pass krte skte hain---->>>> jaise-->>
+// handleObject({
+//     username: "sam",
+//     price: 500
+// })
+
+
+
+// How to pass array in functions----------------->>>>>>>>>>>>>>>>>>>>>
+// const myNewArray = [200, 400, 500, 600]
+
+// function returnsecondValue(getArray){
+//     return getArray[1]
+// }
+// console.log(returnsecondValue(myNewArray))
+// Array ko bhi bana ke pass kar skte hain---->>>>
+// console.log(returnsecondValue([200, 500, 100, 1000]))
+
 
 
 
