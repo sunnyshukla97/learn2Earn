@@ -6,20 +6,95 @@
 
 // For example---->>>>
 
-const user = {
-    username: "sunny",
-    price: 999,
+// const user = {
+//     username: "sunny",
+//     price: 999,
 
-    welcomeMessage: function(){
-        console.log(`${this.username}, welcome to the website`);
-        console.log(this);
+//     welcomeMessage: function(){
+//         console.log(`${this.username}, welcome to the website`);
+//         console.log(this);
         
         
-    }
-}
+//     }
+// }
 
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
 // console.log(this); // gives empty {}, in node environment, but gives window as a global object in browser!
+
+// When used alone, 'this' refers to the global object.
+// Because 'this' is running in the global scope.
+// In a browser window the global object is [object Window]
+
+// let x = this
+// console.log(x); // empty {} in the output!
+
+// In strict mode, when used alone, this also refers to the global object:
+// "use strict";
+// let x = this;
+// console.log(x); 
+
+// function chai(){
+//     let username = "sunny"
+//     console.log(this.username);
+    
+// }
+// chai() // yahan pe this use krne ke baad, output me aata hai "undefined"
+
+
+// const chai = () => {
+//     let username = "sunny"
+//     console.log(this.username);
+    
+// }
+// chai() // "undefined"-> output!
+
+
+// const chai = () => { //glimpse of arrow function!
+//     let username = "sunny"
+//     console.log(this);
+    
+// }
+// chai()  // {}->output!
+
+// const addTwo = (num1, num2) => { // basic arrow function, also called "explicit" return, wherein we must use "return" if we use {}!
+//     return num1 + num2
+// }
+// console.log(addTwo(3, 4)); // output->7
+
+// implicit return--------->>>>>>>> in this we remove the curly braces, get the work in same line!
+// const addTwo = (num1, num2) => num1 + num2
+// console.log(addTwo(3, 4));
+
+// const addTwo = (num1, num2) => (num1 + num2) // we can use () as well for a implicit return!
+// console.log(addTwo(3, 4));
+
+
+// const addTwo = (num1, num2) => {Username: 'sunny'}
+// console.log(addTwo(3, 4)); // output-undefined!
+
+
+// const addTwo = () => {Username: 'sunny'}
+// console.log(addTwo()); // output-undefined!
+
+
+// const addTwo = (num1, num2) => ({Username: 'sunny'})
+// console.log(addTwo(3, 4)); // output-> { Username: 'sunny' }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
