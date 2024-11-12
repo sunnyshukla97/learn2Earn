@@ -3,13 +3,13 @@
 // var c = 30
 
 //var c = 300
-let a = 300
-if(true){
-    let a = 10
-    const b = 20
-    console.log("INNER: ", a);
+// let a = 300
+// if(true){
+//     let a = 10
+//     const b = 20
+//     console.log("INNER: ", a);
     
-} 
+// } 
 
 // if(true){
 //     let a = 10
@@ -18,7 +18,7 @@ if(true){
 // }
 
 
-console.log(a); // ye print nhi hoga.
+// console.log(a); // ye print nhi hoga.
 // console.log(b); // ye v print nhi hoga.
 // console.log(c); // lekin "var" ke sath print hoga!
 
@@ -107,3 +107,71 @@ console.log(a); // ye print nhi hoga.
 // Variables declared with var, let and const are quite similar when declared outside a block.
 
 // They all have Global Scope:
+
+
+// Nested sscope case---->>>>>>>>>>>
+// 1) Function ke andar ek aur function wala scope ka case---->>>>
+
+// function one(){
+//   const username = "sunny"
+
+//   function two(){
+//     const website = "youtube"
+//     console.log(username); // this is allowed, child can take from parents, parents is like their global scope!
+    
+//   }
+//   console.log(website); // this is not allowed, parent cannot take from their child!
+
+//   two()
+  
+// }
+
+// one()
+
+// 2) if-else ke andar nested scope wala case ---->>>>
+
+// if (true) {
+//   const username = "sunny"
+//   if (username === "sunny") {
+//     const website = " youtube"
+//     console.log(username + website); //ye print hoga!
+    
+
+//   }
+//   console.log(website); // ye print nhi hoga!
+  
+// }
+
+// console.log(username); // ye v print nhi hoga!
+
+
+
+
+//++++++++++++++++++++++++++++ interesting+++++++++++++++++++++++++++++++++++++++++
+
+// function addone(num){
+//   return num + 1
+// }
+// addone(5)
+
+// const addTwo = function(num){ // different ways of expressing functions by holding into variables, this is called expression as well!
+//   return num + 2
+// }
+// addTwo(5) 
+
+// one more inetersting thing to notice---->>>>
+console.log(addone(5)) // it gives output if we declare function like this!
+function addone(num){
+  return num + 1
+}
+
+console.log(addTwo(5)) // but it does not give output if we declare function by holding it into a variable, gives error!
+const addTwo = function(num){ 
+  return num + 2
+}
+
+// output for this, if we call function before---- "ReferenceError: Cannot access 'addTwo' before initialization"
+
+
+
+
