@@ -102,6 +102,30 @@
 // }
 // x.show()
 
+// const y = {
+//     name: "sammy",
+//     age: 26,
+//     face: () => {
+//         console.log(this.name); // "undefined -> output ye hai!
+//         // console.log(this); // '{}' -> output ye hai!
+        
+        
+//     }
+// }
+// // console.log(y);
+// y.face() 
+
+// const y = {
+//     name: "sammy",
+//     age: 26,
+//     face: function(){
+//         console.log(this.name); // here ouput comes as "sammy"!
+        
+//     }
+// }
+// // console.log(y);
+// y.face() 
+
 
 
 
