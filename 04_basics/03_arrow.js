@@ -33,7 +33,7 @@
 // In strict mode, when used alone, this also refers to the global object:
 // "use strict";
 // let x = this;
-// console.log(x); 
+// console.log(x); // -> {}, in the output!
 
 // function chai(){
 //     let username = "sunny"
@@ -82,8 +82,25 @@
 // const addTwo = (num1, num2) => ({Username: 'sunny'})
 // console.log(addTwo(3, 4)); // output-> { Username: 'sunny' }
 
+// const sayHello = (name, greeting) => console.log(greeting + " " + name);
+// sayHello("sunny", "Good evening!")
 
 
+// Arrow function with "this" keyword! used wherein there is a function inside afunction inside an object!
+// const x = {
+//     name: "sunny",
+//     role: "Js developer",
+//     exp: 30,
+//     show: function(){
+//         // console.log(`${this.name}, welcome to the role of ${this.role}`);
+//       setTimeout(() => {
+//         console.log(`${this.name}, welcome to the role of ${this.role}`)
+//       }, 2000)    
+        
+  
+//     }
+// }
+// x.show()
 
 
 

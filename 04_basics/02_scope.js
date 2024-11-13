@@ -11,10 +11,12 @@
     
 // } 
 
+
+
 // if(true){
 //     let a = 10
 //     const b = 20
-//      c = 30 // tb v print hoga scope ke bahar!
+//     var c = 30 // tb v print hoga scope ke bahar!
 // }
 
 
@@ -56,11 +58,13 @@
 //   Example
   // code here can NOT use carName
   
-//   function myFunction() {
-//     let carName = "Volvo";
-//     // code here CAN use carName
-//   }
-  
+  // function myFunction() {
+  //   let carName = "Volvo";
+  //   console.log(carName);
+    
+  //   // code here CAN use carName
+  // }
+  // myFunction()
   // code here can NOT use carName 
 
 //   Local variables have Function Scope:
@@ -76,14 +80,20 @@
 
 // They all have Function Scope:
 // function myFunction() {
-//   var carName = "Volvo";   // Function Scope
+//   var carName = "Volvo";
+//   // console.log(carName);
+//     // Function Scope
 // }
+// // console.log(myFunction(carName))
+
+
 // function myFunction() {
 //   let carName = "Volvo";   // Function Scope
 // }
 // function myFunction() {
 //   const carName = "Volvo";   // Function Scope
 // }
+// myFunction()
 
 
 
@@ -91,11 +101,15 @@
 // A variable declared outside a function, becomes GLOBAL.
 // Example
 // let carName = "Volvo";
-// // code here can use carName
+// // // code here can use carName
 
 // function myFunction() {
+//   let brand = carName
+//   console.log(brand);
+  
 // // code here can also use carName
 // }
+// myFunction()
 
 // A global variable has Global Scope:
 // All scripts and functions on a web page can access it
@@ -109,7 +123,7 @@
 // They all have Global Scope:
 
 
-// Nested sscope case---->>>>>>>>>>>
+// Nested scope case---->>>>>>>>>>>
 // 1) Function ke andar ek aur function wala scope ka case---->>>>
 
 // function one(){
@@ -120,7 +134,7 @@
 //     console.log(username); // this is allowed, child can take from parents, parents is like their global scope!
     
 //   }
-//   console.log(website); // this is not allowed, parent cannot take from their child!
+//   // console.log(website); // this is not allowed, parent cannot take from their child!
 
 //   two()
   
@@ -131,18 +145,33 @@
 // 2) if-else ke andar nested scope wala case ---->>>>
 
 // if (true) {
-//   const username = "sunny"
+//  const username = "sunny"
 //   if (username === "sunny") {
 //     const website = " youtube"
-//     console.log(username + website); //ye print hoga!
+//     // console.log(username + website); //ye print hoga!
     
 
 //   }
-//   console.log(website); // ye print nhi hoga!
+//   // console.log(website); // ye print nhi hoga!
   
 // }
 
 // console.log(username); // ye v print nhi hoga!
+
+// if (true) {
+//   const username = "sunny"
+//   console.log(username);
+  
+//    if (username === "sunny") {
+//      const website = " youtube"
+//      console.log(username + website); //ye print hoga!
+     
+ 
+//    }
+//    // console.log(website); // ye print nhi hoga!
+   
+//  }
+
 
 
 
@@ -160,15 +189,15 @@
 // addTwo(5) 
 
 // one more inetersting thing to notice---->>>>
-console.log(addone(5)) // it gives output if we declare function like this!
-function addone(num){
-  return num + 1
-}
+// console.log(addone(5)) // it gives output if we declare function like this!
+// function addone(num){
+//   return num + 1
+// }
 
-console.log(addTwo(5)) // but it does not give output if we declare function by holding it into a variable, gives error!
-const addTwo = function(num){ 
-  return num + 2
-}
+// console.log(addTwo(5)) // but it does not give output if we declare function by holding it into a variable, gives error!
+// const addTwo = function(num){ 
+//   return num + 2
+// }
 
 // output for this, if we call function before---- "ReferenceError: Cannot access 'addTwo' before initialization"
 
