@@ -70,21 +70,46 @@
 
 // nested if wala case---->>>>>>> (USED WHERE WE NEED TO CHECK MULTIPLE CONDITIONS!)
 
-const balance = 1000
+// const balance = 1000
 
-if ( balance < 500){
-    console.log("less than 500");
+// if ( balance < 500){
+//     console.log("less than 500");
     
-} else if ( balance < 750){
-    console.log("less than 750");
+// } else if ( balance < 750){
+//     console.log("less than 750");
     
-} else if ( balance < 900){
-    console.log("less than 900");
+// } else if ( balance < 900){
+//     console.log("less than 900");
     
-} else {
-    console.log("balance is 1000");
+// } else {
+//     console.log("balance is 1000");
     
-}
+// }
+
+// this way we can check multiple statements!
+// const userLoggedIn = true
+// const debitCard = true
+
+// if ( userLoggedIn && debitCard ){ // and operator; koi ek v false to total false!
+//     console.log("Allow to buy course!");
+    
+// }
+
+// const userLoggedIn = true
+// const debitCard = true
+
+// if ( userLoggedIn && debitCard && 2 == 3 ){
+//     console.log("Allow to buy course!");
+    
+// }
+
+// const userLoggedInFromGoogle = false
+// const userLoggedInFromEmail = true
+
+// if ( userLoggedInFromGoogle || userLoggedInFromEmail ){ // oroperator; ki ek true hona chahiye!
+//     console.log("user logged in!");
+    
+// }
 
 
 
