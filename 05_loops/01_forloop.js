@@ -245,3 +245,31 @@
     
 // }
 
+// #factorial - if for 5 = 1*2*3*4*5.
+// #USING while loop:-
+// #n = 5
+// #fact = 1
+// #i = 1
+// #while i <= n:
+//     #fact *= i
+//     #i += 1
+// #print("factorial =", fact) // factorial of a number using python!
+
+// to find the factorial using javascript---->>>> we need for loop under a if-else!
+// let num = 5
+// if (num < 0) {
+//     console.log("facotial of negative number doesn't exist!!");
+    
+// } else if ( num == 0) {
+//     console.log("factorial is :", 1);
+    
+// } else {
+//     let fact = 1
+//     for (let i = 1; i <= num; i++) {
+//         fact *= i
+       
+        
+//     }
+//     console.log(`factorial is ${fact}`);
+    
+// }
