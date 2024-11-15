@@ -107,11 +107,113 @@
 // yanki ki, ek bar outer loop chalega to inner loop apne original values  ke sath aur ek executed outer loop values ke sath
 // 10 bar print hoga!
 
-for (let i = 0; i <= 10; i++) {
-    console.log(`outer loop value: ${i}`);
-    for (let j = 0; j <= 10; j++) {
-        console.log(`inner loop value: ${j} and outer value ${i}`);
+//// ab kuch mathematical calculation krte hain loop ke andar!
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(`outer loop value: ${i}`);
+//     for (let j = 0; j <= 10; j++) {
+//         // console.log(`inner loop value: ${j} and outer value ${i}`);
+//         console.log(i + '*' + j + '=' + i*j);
         
-    }
+        
+//     }
     
-}
+// } 
+
+
+// this time initializing i&j with 1
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`outer loop value: ${i}`);
+//     for (let j = 1; j <= 10; j++) {
+//         // console.log(`inner loop value: ${j} and outer value ${i}`);
+//         console.log(i + '*' + j + '=' + i*j);
+        
+        
+//     }
+    
+// }
+
+
+// this time only adding i & j!
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`outer loop value: ${i}`);
+//     for (let j = 1; j <= 10; j++) {
+//         // console.log(`inner loop value: ${j} and outer value ${i}`);
+//         // console.log(i + '*' + j + '=' + i*j);
+//         console.log(i + j);
+        
+        
+        
+//     }
+    
+// }
+
+
+// let myArray = ["superman", "antman", "batman"]
+// // console.log(myArray.length); // = 3
+// console.log(myArray[2]);  // = batman
+
+
+// let myArray = ["superman", "antman", "batman"]
+// for (let indi = 0; indi < myArray.length; indi++) {
+//     const element = myArray[indi];
+//     console.log(element);
+       
+// } 
+
+// agar hm condition ko <= kr denge to end me undefined ayega, kyuki index to 2 tk he diye hai array ka!
+
+// let myArray = ["superman", "antman", "batman"]
+// for (let indi = 0; indi <= myArray.length; indi++) {
+//     const element = myArray[indi];
+//     console.log(element);
+       
+// }
+
+
+// let myArray = ["superman", "antman", "batman"]
+// for (let index = 0; index <= myArray.length; index++) {
+//     const element = myArray[1];
+//     // console.log(element);
+//     console.log(`${element} and ${index}`);
+    
+    
+    
+// }
+
+
+
+// ek imp chiz---> agar hm increment ++ nhi denge to loop chalta jayega first wale ke sath he! for ex->
+// fir usko rokne ke lite ctrl + c krna pdega!
+
+
+// let myArray = ["superman", "antman", "batman"]
+// for (let indi = 0; indi < myArray.length; indi) {
+//     const element = myArray[indi];
+//     console.log(element);
+       
+// } 
+
+
+// Break keyword-> isko use krne se iske baad wala kuch v print nhi hoga, code whin pe finish ho jayega!
+
+// for (let index = 1; index <= 20; index++) {
+//     if ( index == 5 ) {
+//         console.log(`Detected 5!`);
+//         break
+//     }
+//     console.log(`value of i is ${index}`);
+// }
+
+//// Continue keyword-> iko use krne se, jahan pe wo specific item detect ho jata hai, wo usko highlight kr deta hai, but aage continue
+// krne ke liye allow kr deta hai, code finish nhi kr deta hai break ki tarah!
+
+// for (let index = 1; index <= 20; index++) {
+//     if ( index == 5 ) {
+//         console.log(`Detected 5!`);
+//         continue
+//     }
+//     console.log(`value of i is ${index}`);
+// }
