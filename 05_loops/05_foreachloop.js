@@ -42,13 +42,15 @@
 
 // coding.forEach(printme)
 
-// ye jo for each ke andar callback function hai, ye sirf values ko he nhi leke nhi aata hai, iske paaas or v paramaters hote hain!
+// ye jo for each ke andar callback function hai, ye sirf values ko he nhi leke  aata hai, iske paaas or v paramaters hote hain!
 
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 // coding.forEach( (item, index) => {
-//     console.log(item, index);
+//     // console.log(item, index);
     
 // })
+
+
 
 // output->
 // js 0
@@ -61,23 +63,40 @@
 // ab hmko array v chahiye pura->
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 // coding.forEach( (item, index, arr) => {
-//     console.log(item, index, arr);
+//     // console.log(item, index, arr);
+//     // console.log(index);
+//     console.log(`${index} -> ${item}`);
+    
+    
     
 
 // })
 
-// output->
+// output-> 1)
 // js 0 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // ruby 1 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // java 2 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // python 3 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // cpp 4 [ 'js', 'ruby', 'java', 'python', 'cpp' ] 
 
+// output-> 2)
+// 0
+// 1
+// 2
+// 3
+// 4
+
+// output -> 3)
+// 0 -> js
+// 1 -> ruby
+// 2 -> java
+// 3 -> python
+// 4 -> cpp
 
 
 // Arrays = [{}, {}, {}] -> arrays ke andar bahut sare objects hote hain!
 // jab database se values aate hain, to arrays ke andar dher sare objects ke form me he aate hain!
-// ab unke andar property o access krne ke liye or unpe loop lgane ke liye kam hm kuch is prakar se krte hain---->>>>
+// ab unke andar property ko access krne ke liye or unpe loop lgane ke liye kam hm kuch is prakar se krte hain---->>>>
 
 const myCoding = [
     {
@@ -118,12 +137,19 @@ const myCoding = [
 
 
 // myCoding.forEach( (item, index) => {
-//     console.log(item.languageName.includes('python'), index);
+//     // console.log(item.languageName.includes('python'), index);
+//     // console.log(item, index);
     
     
-// })
+    
+// }) 
 
-// output->
+// output->1)
 // false 0
 // false 1
 // true 2
+
+//output-2)
+// { languageName: 'javascript', languageFilename: 'js' } 0
+// { languageName: 'java', languageFilename: 'java' } 1
+// { languageName: 'python', languageFilename: 'py' } 

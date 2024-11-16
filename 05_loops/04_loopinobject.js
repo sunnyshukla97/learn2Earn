@@ -79,19 +79,26 @@
 // 3 // returns index of the array as key!
 
 
-// const programming = ['js', 'cpp', 'python', 'ruby']
-// for (const key in programming) {
-//    console.log(programming[key]);
+// // const programming = ['js', 'cpp', 'python', 'ruby']
+// // for (const key in programming) {
+// // //    console.log(programming[key]);
+// // console.log(`${key} -> ${programming[key]}`);
+
    
    
 // }
 
-// output->
+// output-> (1)
 // JS
 // cpp
 // python
 // ruby
 
+// output-> (2)
+// 0 -> js
+// 1 -> cpp
+// 2 -> python
+// 3 -> ruby
 
 
 // ab kya he "for-in" loop, map pe v kam krega!->
