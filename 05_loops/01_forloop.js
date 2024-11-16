@@ -273,3 +273,37 @@
 //     console.log(`factorial is ${fact}`);
     
 // }
+
+
+
+
+// function oddEven(num){
+//     if (num %2 == 0) {
+//         console.log("even");
+        
+//     }
+// }
+// oddEven(2)
+
+
+// print even numbers from 1 to 100!
+// let num = 100
+// for (let i = 2; i <= num; i += 2) {
+//     console.log(i);
+//   }
+
+
+// let num = 100
+// for (let i = 1; i <= num; i += 2) {
+//     console.log(i);
+//   }
+
+
+// same thing can be done like this!
+// function printEvenNumbers() {
+//     for (let i = 0; i <= 10; i += 2) {
+//       console.log(i);
+//     }
+//   }
+//   printEvenNumbers(); 
+
