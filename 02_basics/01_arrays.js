@@ -46,6 +46,13 @@ const myHeroes = ["shaktiman", "nagraj",]
 // 1) push - adds value in array->
 // myArr.push(6)
 // console.log(myArr);
+// console.log(myArr.push(7));
+// console.log(myArr);
+// myArr[1] = 9
+// console.log(myArr);
+
+
+
 
 // 2) pop - removes last element->
 // myArr.pop()
