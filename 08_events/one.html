@@ -14,7 +14,7 @@
             <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+            <li><a target="_blank" style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
     </div>
 
@@ -41,10 +41,72 @@
     // altkey, ctrlkey, shiftkey, keyCode
 
     // 4) fourth approach!
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log(e);
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // })
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the owl");
+    // })
+
+    //event propagation-> bubbling-> inside se outside!
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the owl");
+    // }, false)
+
+    //event propagation-> capturing-> outside se inside!
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, true)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the owl");
+    // }, true)
+
+    // even if we don't provide, false or true, by default it is set at false!
+    // now if we want to stop propagation,->
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the owl");
+    //     e.stopPropagation()
+    // }, false)
+
+    // // Prevent default->
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log('google clicked');
+    //     e.preventDefault();
+        
+    // }, false)
+
+    // now we want ki, kisi v image pe click karu or sabhi images gayab hojaye---->>>>
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        // let removeIt = e.target.parentNode
+        // removeIt.remove() 
+
+        
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            
+        }
+        
+
        
-    }, false)
+        
+        
+    })
 
 
 </script>
