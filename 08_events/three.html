@@ -20,21 +20,38 @@
     // const sayDate = function(){
     //     console.log("sunny", Date.now());
         
-    // }
-    // setInterval(sayDate, 1000)
+    // }    
+    // // const setNow = setInterval(sayDate, 1000)
+    
 
-
-    const sayDate = function(str){
-        console.log(str, Date.now());
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
         
-    }
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    // }
+    // const intervalId = setInterval(sayDate, 1000, "hi")
 
-    clearInterval(intervalId)
+    // clearInterval(intervalId)
 
     // task-> ye jo 2 buttons hai upar, start, stop, ispe event lgana hai ki,
     // start pe click krte he setinterval chalu hojaye or,
     // stop pe click klrte he clearinterval yani setinterval ruk jaye!
+
+    const sayDate = function(str){
+        console.log(str, Date.now());
+        
+    } 
+    let interval;
+    document.querySelector('#start').addEventListener('click', function(){
+        interval = setInterval(sayDate, 1000, "hi suuny")
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(interval)
+    })
+
+
+
+    
    
 </script>
 
