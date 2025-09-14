@@ -25,7 +25,7 @@ let myName = "sunny"
 console.log(typeof myAge);
 console.log(typeof myName);
 console.log(typeof null); // object at output
-console.log(typeof undefined); //undefined output
+console.log(typeof undefined); //undefined output/
 
 
 
